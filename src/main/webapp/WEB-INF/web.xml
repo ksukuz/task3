@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns="https://jakarta.ee/xml/ns/jakartaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="https://jakarta.ee/xml/ns/jakartaee https://jakarta.ee/xml/ns/jakartaee/web-app_5_0.xsd"
+         version="5.0">
+    <servlet>
+        <servlet-name>PostingDay</servlet-name>
+        <servlet-class>com.example.task3.Servlets.PostingDay</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>PostingDay</servlet-name>
+        <url-pattern>/postings/day</url-pattern>
+    </servlet-mapping>
+    <servlet>
+        <servlet-name>PostingMonth</servlet-name>
+        <servlet-class>com.example.task3.Servlets.PostingMonth</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>PostingMonth</servlet-name>
+        <url-pattern>/postings/month</url-pattern>
+    </servlet-mapping>
+    <servlet>
+        <servlet-name>PostingYear</servlet-name>
+        <servlet-class>com.example.task3.Servlets.PostingYear</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>PostingYear</servlet-name>
+        <url-pattern>/postings/year</url-pattern>
+    </servlet-mapping>
+    <servlet>
+        <servlet-name>PostingQuarter</servlet-name>
+        <servlet-class>com.example.task3.Servlets.PostingQuarter</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>PostingQuarter</servlet-name>
+        <url-pattern>/postings/quarter</url-pattern>
+    </servlet-mapping>
+    <listener>
+        <listener-class>com.example.task3.UnauthorizedDeliveries</listener-class>
+    </listener>
+</web-app>
